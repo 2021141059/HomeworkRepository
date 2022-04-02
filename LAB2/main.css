@@ -83,7 +83,7 @@ html *{
 .login_wrap h4,.signup_wrap h4{
     font-size: 2rem;
 }
-.login_wrap input,.signup_wrap input{
+.login_wrap input,.signup_wrap input,.login_register,.signup_login{
     font-size:1.5rem;
 }
 
@@ -106,7 +106,7 @@ html *{
     margin-top:2.5rem;
     text-align: center;
 }
-.login_submit input,.login_register input,.signup_submit input,.signup_login input{
+.login_submit input,.login_register a,.signup_submit input,.signup_login a{
     display:block;
     width:100%;
     height:5rem;
@@ -117,8 +117,9 @@ html *{
     cursor:pointer;
     outline:none;
     letter-spacing: 0.2rem;
+    line-height: 5rem;
 }
-.login_submit input:hover,.login_register input:hover{
+.login_submit input:hover,.login_register a:hover{
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
 }
 
