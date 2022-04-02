@@ -83,7 +83,7 @@ html *{
 .login_wrap h4,.signup_wrap h4{
     font-size: 2rem;
 }
-.login_wrap input{
+.login_wrap input,.signup_wrap input{
     font-size:1.5rem;
 }
 
