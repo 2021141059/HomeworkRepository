@@ -1,0 +1,271 @@
+/*initial values*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+/*fonts*/
+@font-face {
+    font-family: 'SuncheonB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/SuncheonB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html * {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+}
+body{
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+/*login page*/
+
+.login_wrap,
+.signup_wrap {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login_form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 400px;
+    height: 60vh;
+    max-height: 700px;
+    min-height: 600px;
+    border-radius: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.login_wrap h1,
+.signup_wrap h1 {
+    font-size: 4rem;
+    color: #B334FA;
+    text-align: center;
+}
+
+.login_email,
+.login_pw,
+.signup_email,
+.signup_pw,
+.signup_pwcheck,
+.signup_name,
+.signup_tel,
+.signup_age {
+    margin-top: 2rem;
+    width: 80%;
+}
+
+.login_email input,
+.login_pw input,
+.signup_email input,
+.signup_pw input,
+.signup_pwcheck input,
+.signup_name input,
+.signup_tel input,
+.signup_age input {
+    width: 100%;
+    height: 5rem;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    padding: 0 2rem;
+    border: 1px solid lightgray;
+}
+
+.login_wrap h4,
+.signup_wrap h4 {
+    font-size: 2rem;
+}
+
+.login_wrap input,
+.signup_wrap input,
+.login_register,
+.signup_login {
+    font-size: 1.5rem;
+}
+
+.login_etc {
+    padding: 10px;
+    width: 80%;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.login_submit,
+.signup_submit {
+    margin-top: 5rem;
+    width: 80%;
+}
+
+.login_register,
+.signup_login {
+    width: 80%;
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.login_submit input,
+.login_register a,
+.signup_submit input,
+.signup_login a {
+    display: block;
+    width: 100%;
+    height: 5rem;
+    background: linear-gradient(to right, #D170F0, #B334FA);
+    ;
+    color: white;
+    border-radius: 4rem;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 0.2rem;
+    line-height: 5rem;
+}
+
+.login_submit input:hover,
+.login_register a:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+
+/*signup page*/
+/*비슷한 구조를 가진 요소는 함께 설정하였음*/
+.signup_form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 400px;
+    height: 60vh;
+    min-height: 600px;
+    border-radius: 2.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    overflow-y: scroll;
+}
+
+.signup_form::-webkit-scrollbar {
+    display: none;
+}
+
+.signup_form h1 {
+    margin-top: 4rem;
+}
+
+.signup_login {
+    margin-bottom: 4rem;
+}
+
+/*index*/
+.index_wrap {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    max-width: 1020px;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.index_wrap header{
+    flex-flow:row;
+    width:100%;
+    text-align: left;
+    height:100px;
+    overflow: hidden;
+}
+.index_wrap h1{
+    font-size:4rem;
+    animation-name:header_moving;
+    animation-duration: 2s;
+    width:43rem;
+    line-height: 100px;
+}
+@keyframes header_moving{
+    from{margin-left:100%;}
+    to{margin-left:0;}
+}
+.index_wrap nav{
+    display:flex;
+    justify-content:flex-end;
+    width:100%;
+    font-size:2rem;
+}
+.index_wrap nav div{
+    margin-right:2rem;
+}
+.index_salebox{
+    width:100%;
+}
+.index_salebox h2{
+    font-size:5rem;
+    margin-left:3rem;
+}
+.index_salemain{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.index_salemain div{
+    width:30%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.index_salemain img{
+}
+#item1 img{
+    transition:transform 2s;
+}
+#item1 img:hover{
+    transform:rotate(360deg);
+}
+#item2 img{
+    width:200px;
+    height:200px;
+    transition:width 2s, height 2s;
+}
+#item2 img:hover{
+    width:100%;
+    height:100%;
+}
