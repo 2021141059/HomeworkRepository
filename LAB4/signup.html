@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>LAB4_2021141059</title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+    <div class="signup_wrap">
+        <form class="signup_form" method="post">
+            <h1>Register</h1>
+            <div class="signup_email">
+                <h4>E-mail</h4>
+                <input type="email" name="email" id="email" placeholder="Email" autofocus required>
+            </div>
+            <div class="signup_pw">
+                <h4>Password</h4>
+                <input type="password" name="pw" id="pw" placeholder="Password" required>
+            </div>
+            <div class="signup_pwcheck">
+                <h4>Password Check</h4>
+                <input type="password" name="pwcheck" id="pwcheck" placeholder="Password Check" required>
+            </div>
+            <div class="signup_name">
+                <h4>Name</h4>
+                <input type="text" name="name" id="name" placeholder="Write your name here" required>
+            </div>
+            <div class="signup_tel">
+                <h4>Tel</h4>
+                <input type = "tel" name="tel" id="tel" placeholder = "ex) 010-1234-5678" pattern = "\d{3}-\d{4}-\d{4}" required>
+            </div>
+            <div class="signup_age">
+                <h4>Age</h4>
+                <input type = "number" name="age" id="age" min = "0" max = "120" step = "1" value = "21" required>
+            </div>
+            <div class="signup_submit">
+                <input type="submit" value="Register">
+            </div>
+            <div class="signup_login">
+                <a href="login.html">Go to Login Page</a>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
