@@ -6,23 +6,49 @@
     <title>LAB5_2021141059</title>
     <link rel="stylesheet" type="text/css" href="./main.css">
     <script>
+        let firstload=true;
         let counter = 1;
-        document.addEventListener('DOMContentLoaded', load);
+        document.addEventListener('DOMContentLoaded',load);
         window.onscroll = () => {
             if(window.innerHeight + window.scrollY >= document.body.offsetHeight){
                 load();
             }
         }
-
+        function resetLoad(){
+            document.getElementsByClassName('index_salemain')[0].innerHTML='';
+            firstload=true;
+            counter=1;
+            load();
+        }
         function load(){
             const start = counter;
-            const end = start + 1;
+            let end;
+            if(firstload){
+                 end = start + 5;
+                 firstload=false;
+            }
+            else{
+                end = start + 1;
+            }
             counter = end + 1;
-            fetch('product.json')
+            fetch(`product.json`)
             .then(response => response.json())
-            .then(posts => {
-                posts.forEach(add_post);
+            .then(data => {
+                let results=data;
+                const category=document.getElementById('category').value;
+                const query=document.getElementById('query').value;
+                if(category!='All'){
+                    results=results.filter(result => result.category===category)
+                }
+                if(query!=''){
+                    results=results.filter(result => result.name.indexOf(query)!==-1||result.artist.indexOf(query)!==-1)
+                }
+                //document.getElementsByClassName('index_salemain')[0].innerHTML='';
+                results.slice(start-1,end).forEach(add_post);
             })
+            // .then(posts => {
+            //     posts.slice(start-1,end).forEach(add_post);
+            // })
         }
 
         function add_post(data){
@@ -31,7 +57,41 @@
             const item=document.createElement('img');
             item.setAttribute("src",data.image);
             post.appendChild(item);
+            const textnode = document.createTextNode(data.name);
+            post.appendChild(textnode)
+            const invis=document.createElement('div');
+            invis.classList.add('invis','invis_true');
+
+            const title=document.createElement('p');
+            const title_text=document.createTextNode(data.name);
+            title.appendChild(title_text);
+            invis.appendChild(title);
+
+            const artist=document.createElement('p');
+            const artist_text=document.createTextNode(data.artist);
+            artist.appendChild(artist_text);
+            invis.appendChild(artist);
+
+            const price=document.createElement('p');
+            const price_text=document.createTextNode(data.price);
+            price.appendChild(price_text);
+            invis.appendChild(price);
+            invis.setAttribute("onclick","change_invis(event)")
+            post.appendChild(invis);
+
             document.getElementsByClassName('index_salemain')[0].append(post);
+        }
+
+        function change_invis(event){
+            if(event.target.classList.contains('invis_true')){
+                event.target.classList.remove('invis_true');
+                event.target.classList.add('invis_false');
+            }
+            else if(event.target.classList.contains('invis_false')){
+                event.target.classList.remove('invis_false');
+                event.target.classList.add('invis_true');
+            }
+            
         }
     </script>
 </head>
@@ -49,10 +109,16 @@
             <div class="choices">
                 <form action="">
                     <label>Choose a category :</label>
-                    <input type="text" id="category">
+                    <select id="category">
+                        <option selected>All</option>
+                        <option>hiphop</option>
+                        <option>popular music</option>
+                        <option>idol</option>
+                        <option>foriegn</option>
+                    </select>
                     <label>Enter Search Term :</label>
                     <input type="text" id="query">
-                    <button>Filter Results</button>
+                    <button type="button" onclick="resetLoad()">Filter Results</button>
                 </form>
             </div>
             <div class="index_shoppingcontents">

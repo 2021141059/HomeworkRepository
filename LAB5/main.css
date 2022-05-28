@@ -39,7 +39,7 @@ html * {
 body{
     background-color: rgba(0, 0, 0, 0.1);
     width: 100vw;
-    height: 100vh;
+    /*height: 100vh;*/
     display: flex;
     justify-content: center;
 }
@@ -204,15 +204,14 @@ body{
     background-color: rgba(0, 0, 0, 0.1);
     width: 100vw;
     max-width: 1020px;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-flow: column;
     align-items: center;
-    overflow-y: scroll;
 }
-.index_wrap::-webkit-scrollbar {
+/* .index_wrap::-webkit-scrollbar {
     display: none;
-}
+} */
 .index_wrap header{
     width:100%;
     height:100px;
@@ -259,15 +258,17 @@ body{
 .choices form label, button{
     margin-top: 2rem;
 }
-.choices form input{
+.choices form input,select{
     width:80%;
+    height:3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
 }
 .index_shoppingcontents{
     margin-top: 2rem;
     display:flex;
     flex-direction: column;
     width:70%;
-    overflow: hidden;
 }
 
 .index_salebox h2{
@@ -280,7 +281,6 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #B334FA;
 }
 .index_salemain .item{
     width:40%;
@@ -290,10 +290,28 @@ body{
     justify-content: space-around;
     align-items: center;
     margin-bottom: 2rem;
+    flex-direction: column;
+    font-size: 2rem;
+    position:relative;
 }
-
-.index_salemain img{
-    height:80%;
+.invis{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.invis_false{
+    opacity: 70%;
+}
+.invis_true{
+    opacity: 1%;
+}
+.invis p{
+    color:white;
 }
 
 /* #item1 img{

@@ -1,72 +1,96 @@
 [
     {
+        "id":1,
         "name": "24:26",
+        "artist" : "빈지노",
         "price": "80000",
         "image": "image/24_26.jpeg",
         "category": "hiphop"
     },
     {
+        "id":2,
         "name": "선인장화",
+        "artist" : "던말릭",
         "price": "70000",
         "image": "image/선인장화.jpeg",
         "category": "hiphop"
     },
     {
+        "id":3,
         "name": "킁",
+        "artist" : "씨잼",
         "price" : "90000",
         "image" : "image/킁.jpeg",
         "category" : "hiphop"
     },
     {
+        "id":4,
         "name": "boyhood",
+        "artist" : "창모",
         "price" : "90000",
         "image" : "image/boyhood.jpeg",
         "category" : "hiphop"
     },
-    {
+    {   
+        "id":5,
         "name": "everest",
+        "artist" : "악동뮤지션",
         "price" : "80000",
         "image" : "image/everest.jpeg",
         "category" : "popular music"
     },
     {
+        "id":6,
         "name": "fearless",
+        "artist" : "르세라핌",
         "price" : "60000",
         "image" : "image/fearless.png",
         "category" : "idol"
     },
     {
+        "id":7,
         "name": "holywood's bleeding",
+        "artist" : "포스트말론",
         "price" : "80000",
         "image" : "image/holywood.jpeg",
         "category" : "foriegn"
     },
     {
+        "id":8,
         "name": "ineverdie",
+        "artist" : "아이들",
         "price" : "70000",
         "image" : "image/ineverdie.jpeg",
         "category" : "idol"
     },
     {
+        "id":9,
         "name": "justice",
+        "artist" : "저스틴비버",
         "price" : "90000",
         "image" : "image/justice.jpeg",
         "category" : "foriegn"
     },
     {
+        "id":10,
         "name": "lilac",
+        "artist" : "아이유",
         "price" : "90000",
         "image" : "image/lilac.jpeg",
         "category" : "popular music" 
     },
     {
+        "id":11,
         "name": "lovedive",
+        "artist" : "아이브",
         "price" : "60000",
         "image" : "image/lovedive.jpeg",
         "category" : "idol" 
     },
     {
+        "id":12,
         "name": "싸다9",
+        "artist" : "싸이",
         "price" : "90000",
         "image" : "image/psy.jpeg",
         "category" : "popular music" 
