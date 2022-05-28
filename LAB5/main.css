@@ -239,15 +239,35 @@ body{
 .index_wrap nav div{
     margin-right:2rem;
 }
+
 .index_salebox{
     width:100%;
     display:flex;
+    flex-direction: row;
+}
+.choices{
+    width:30%;
+}
+.choices form{
+    width:100%;
+    height:100%;
+    display:flex;
     flex-direction: column;
+    font-size: 2rem;
+    align-items: center;
+}
+.choices form label, button{
+    margin-top: 2rem;
+}
+.choices form input{
+    width:80%;
 }
 .index_shoppingcontents{
     margin-top: 2rem;
     display:flex;
     flex-direction: column;
+    width:70%;
+    overflow: hidden;
 }
 
 .index_salebox h2{
@@ -260,13 +280,14 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    background-color: #B334FA;
 }
-.index_salemain div{
-    width:18%;
-    height: 20rem;
+.index_salemain .item{
+    width:40%;
+    height: 30rem;
     background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 2rem;
 }
@@ -275,7 +296,7 @@ body{
     height:80%;
 }
 
-#item1 img{
+/* #item1 img{
     transition:transform 2s;
     max-width: 100%;
 }
@@ -291,59 +312,4 @@ body{
 #item2 img:hover{
     width:100%;
     height:100%;
-}
-.index_introduction{
-    margin-top: 2rem;
-    display:flex;
-    flex-direction: column;
-    width:100%;
-}
-.index_intromain{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width:100%;
-}
-.index_intromain div{
-    padding:2rem;
-    font-size: 2rem;
-    width:50%;
-}
-
-@media screen and (max-width:800px){
-    .index_wrap nav{
-        width:60%;
-        justify-content:space-around;
-    }
-    .index_wrap nav div{
-        margin:0;
-    }
-    .index_shoppingcontents h2,.index_introduction h2{
-        text-align: center;
-        margin-left:0;
-    }
-    .index_salemain div{
-        width:40%;
-    }
-    .index_intromain div{
-        width:100%;
-    }
-}
-@media screen and (max-width: 480px){
-    .index_wrap nav{
-        display:flex;
-        justify-content:center;
-        flex-direction:row;
-        flex-wrap:wrap;
-        width:100%;
-        font-size:2rem;
-    }
-    .index_wrap nav div{
-        width:100%;
-        text-align: center;
-        margin-top:2rem;
-    }
-    .index_salemain div{
-        width:60%;
-    }
-}
+} */

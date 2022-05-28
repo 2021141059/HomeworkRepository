@@ -19,8 +19,19 @@
             const end = start + 1;
             counter = end + 1;
             fetch('product.json')
-            .then(response => console.log('mte'))
-            .catch(()=>console.log('mte'))
+            .then(response => response.json())
+            .then(posts => {
+                posts.forEach(add_post);
+            })
+        }
+
+        function add_post(data){
+            const post =document.createElement('div');
+            post.className='item';
+            const item=document.createElement('img');
+            item.setAttribute("src",data.image);
+            post.appendChild(item);
+            document.getElementsByClassName('index_salemain')[0].append(post);
         }
     </script>
 </head>
@@ -35,20 +46,18 @@
             <div><a href="signup.html">회원 가입</a></div>
         </nav>
         <div class="index_salebox">
+            <div class="choices">
+                <form action="">
+                    <label>Choose a category :</label>
+                    <input type="text" id="category">
+                    <label>Enter Search Term :</label>
+                    <input type="text" id="query">
+                    <button>Filter Results</button>
+                </form>
+            </div>
             <div class="index_shoppingcontents">
                 <h2>sale</h2>
                 <div class="index_salemain">
-                    <div id="item1"><img src=""></div>
-                    <div id="item2"><img src=""></div>
-                    <div id="item1"><img src=""></div>
-                    <div id="item2"><img src=""></div>
-                </div>
-            </div>
-            <div class="index_introduction">
-                <h2>둥지 소개</h2>
-                <div class="index_intromain">
-                    <div>안녕하세요, 저희는 취미나 직업으로 음악을 하는 고객님들께 필요한 장비들을 판매하는 둥지입니다.</div>
-                    <div>안녕하세요, 저희는 취미나 직업으로 음악을 하는 고객님들께 필요한 장비들을 판매하는 둥지입니다.</div>
                 </div>
             </div>
         </div>

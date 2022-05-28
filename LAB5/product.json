@@ -1,76 +1,74 @@
-{
-    "items":[
-        {
-            "name": "24:26",
-            "price": "80000",
-            "image": "image/24_25.jpeg",
-            "category": "hiphop"
-        },
-        {
-            "name": "선인장화",
-            "price": "70000",
-            "image": "image/선인장화.jpeg",
-            "category": "hiphop"
-        },
-        {
-            "name": "킁",
-            "price" : "90000",
-            "image" : "image/킁.jpeg",
-            "category" : "hiphop"
-        },
-        {
-            "name": "boyhood",
-            "price" : "90000",
-            "image" : "image/boyhood.jpeg",
-            "category" : "hiphop"
-        },
-        {
-            "name": "everest",
-            "price" : "80000",
-            "image" : "image/everest.jpeg",
-            "category" : "popular music"
-        },
-        {
-            "name": "fearless",
-            "price" : "60000",
-            "image" : "image/fearless.png",
-            "category" : "idol"
-        },
-        {
-            "name": "holywood's bleeding",
-            "price" : "80000",
-            "image" : "image/holywood.jpeg",
-            "category" : "foriegn"
-        },
-        {
-            "name": "ineverdie",
-            "price" : "70000",
-            "image" : "image/ineverdie.jpeg",
-            "category" : "idol"
-        },
-        {
-            "name": "justice",
-            "price" : "90000",
-            "image" : "image/justice.jpeg",
-            "category" : "foriegn"
-        },
-        {
-            "name": "lilac",
-            "price" : "90000",
-            "image" : "image/lilac.jpeg",
-            "category" : "popular music" 
-        },
-        {
-            "name": "lovedive",
-            "price" : "60000",
-            "image" : "image/lovedive.jpeg",
-            "category" : "idol" 
-        },
-        {
-            "name": "싸다9",
-            "price" : "90000",
-            "image" : "image/psy.jpeg",
-            "category" : "popular music" 
-        }
-    ]
-}
+[
+    {
+        "name": "24:26",
+        "price": "80000",
+        "image": "image/24_26.jpeg",
+        "category": "hiphop"
+    },
+    {
+        "name": "선인장화",
+        "price": "70000",
+        "image": "image/선인장화.jpeg",
+        "category": "hiphop"
+    },
+    {
+        "name": "킁",
+        "price" : "90000",
+        "image" : "image/킁.jpeg",
+        "category" : "hiphop"
+    },
+    {
+        "name": "boyhood",
+        "price" : "90000",
+        "image" : "image/boyhood.jpeg",
+        "category" : "hiphop"
+    },
+    {
+        "name": "everest",
+        "price" : "80000",
+        "image" : "image/everest.jpeg",
+        "category" : "popular music"
+    },
+    {
+        "name": "fearless",
+        "price" : "60000",
+        "image" : "image/fearless.png",
+        "category" : "idol"
+    },
+    {
+        "name": "holywood's bleeding",
+        "price" : "80000",
+        "image" : "image/holywood.jpeg",
+        "category" : "foriegn"
+    },
+    {
+        "name": "ineverdie",
+        "price" : "70000",
+        "image" : "image/ineverdie.jpeg",
+        "category" : "idol"
+    },
+    {
+        "name": "justice",
+        "price" : "90000",
+        "image" : "image/justice.jpeg",
+        "category" : "foriegn"
+    },
+    {
+        "name": "lilac",
+        "price" : "90000",
+        "image" : "image/lilac.jpeg",
+        "category" : "popular music" 
+    },
+    {
+        "name": "lovedive",
+        "price" : "60000",
+        "image" : "image/lovedive.jpeg",
+        "category" : "idol" 
+    },
+    {
+        "name": "싸다9",
+        "price" : "90000",
+        "image" : "image/psy.jpeg",
+        "category" : "popular music" 
+    }
+]
