@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>LAB5_2021141059</title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <script>
+        let counter = 1;
+        document.addEventListener('DOMContentLoaded', load);
+        window.onscroll = () => {
+            if(window.innerHeight + window.scrollY >= document.body.offsetHeight){
+                load();
+            }
+        }
+
+        function load(){
+            const start = counter;
+            const end = start + 1;
+            counter = end + 1;
+            fetch('product.json')
+            .then(response => console.log('mte'))
+            .catch(()=>console.log('mte'))
+        }
+    </script>
+</head>
+
+<body>
+    <div class="index_wrap">
+        <header>
+            <h1>안녕하세요 둥지입니다!</h1>
+        </header>
+        <nav>
+            <div><a href="login.html">로그인</a></div>
+            <div><a href="signup.html">회원 가입</a></div>
+        </nav>
+        <div class="index_salebox">
+            <div class="index_shoppingcontents">
+                <h2>sale</h2>
+                <div class="index_salemain">
+                    <div id="item1"><img src=""></div>
+                    <div id="item2"><img src=""></div>
+                    <div id="item1"><img src=""></div>
+                    <div id="item2"><img src=""></div>
+                </div>
+            </div>
+            <div class="index_introduction">
+                <h2>둥지 소개</h2>
+                <div class="index_intromain">
+                    <div>안녕하세요, 저희는 취미나 직업으로 음악을 하는 고객님들께 필요한 장비들을 판매하는 둥지입니다.</div>
+                    <div>안녕하세요, 저희는 취미나 직업으로 음악을 하는 고객님들께 필요한 장비들을 판매하는 둥지입니다.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
