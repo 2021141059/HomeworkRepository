@@ -314,6 +314,9 @@ body{
     color:white;
 }
 
+.item img{
+    max-width:100%;
+}
 /* #item1 img{
     transition:transform 2s;
     max-width: 100%;
